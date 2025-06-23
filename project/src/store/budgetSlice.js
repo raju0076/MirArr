@@ -20,13 +20,21 @@ const saveBudgetToLocalStorage = (state) => {
 };
 
 const defaultState = {
-  totalBudget: 0,
+  totalBudget: 10000,
   budgetCategories: {
-    
+    food: 3000,
+    transport: 1500,
+    entertainment: 1000,
+    accommodation: 2500,
+    activities: 1000,
+    other: 1000
   },
-  alerts: [],
+  alerts: [
+    { type: "warning", message: "You've used 90% of your food budget!" },
+    { type: "info", message: "New cashback offer on dining this weekend." }
+  ],
   isLoading: false,
-  error: null,
+  error: null
 };
 
 const initialState = loadBudgetFromLocalStorage() || defaultState;
