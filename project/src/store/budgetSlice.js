@@ -20,14 +20,9 @@ const saveBudgetToLocalStorage = (state) => {
 };
 
 const defaultState = {
-  totalBudget: 5000,
+  totalBudget: 0,
   budgetCategories: {
-    food: 3000,
-    transport: 1500,
-    entertainment: 1000,
-    accommodation: 2500,
-    activities: 1000,
-    other: 1000
+    
   },
   alerts: [],
   isLoading: false,
